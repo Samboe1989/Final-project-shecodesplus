@@ -81,6 +81,8 @@ function showLocation(position) {
   axios.get(apiUrl).then(showWeather);
 }
 
+//current Location
+
 function getLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showLocation);
