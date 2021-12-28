@@ -21,32 +21,40 @@
     />
   </head>
   <body>
-    <div class="Container">
+    <div class="wrapper">
+    <div class="container">
       <div class="big-circle">
-        <h1>14°C</h1>
         <div class="actual-temp">
-          <p>
-            HI 14° <br />
-            LO 3°
-          </p>
+          <h1 id="temp">13°C</h1>
         </div>
         <img class="img-actual-weather" src="Images/Cloudy2.jpg" alt="Cloudy" />
 
-        <h2 class="City">Barcelona</h2>
+        <h2 class="city" id="currentCity">Barcelona</h2>
 
         <div class="actual-humwin">
-          <h3>Cloudy</h3>
-          <p>Humidity: 49% &nbsp;&nbsp;&nbsp;Wind: 9km/h</p>
+          <h3 id="description">Cloudy</h3>
+          <p><span id="humidity">Humidity: 49%</span> &nbsp;&nbsp;&nbsp; <span id="windSpeed">Wind: 9km/h</span</p>
         </div>
 
-        <p class="date">Sunday November 2021</p>
+        <p class="dateTime">
+          Sunday November 2021 <br />
+          15:00
+        </p>
       </div>
 
-      <div class="celcius-fahrenheit"><span>°C</span> | <a href="#">°F</a></div>
+      <div class="temp-scale">
+        <p><span id="celsius">°C | </span> <span id="fahrenheit"> °F</span></p>
+      </div>
 
-      <form>
-        <input type="search" placeholder="Type a City" autofocus="on" />
-        <input type="submit" value="Search" />
+      <form id="searchForm">
+        <input
+          type="search"
+          placeholder="Type a City"
+          autofocus="on"
+          id="cityInput"
+        />
+        <button class="searchButton" id="citySeach" type="submit" value="Search"><i>Search</i></button>
+        <button type="button" id="currentLocationButton">Current Location</button>
       </form>
 
       <div class="footer">
@@ -106,6 +114,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
     <script src="src/script.js"></script>
   </body>
