@@ -1,7 +1,7 @@
 body {
   font-family: "Gochi Hand";
   background: linear-gradient(to top, #9890e3 0%, #badbc9 75%) fixed;
-  padding: 50px;
+  padding: 30px 0px 0px 0px;
 }
 
 h1 {
@@ -53,6 +53,12 @@ form {
   padding: 10px;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/091/original/background3.jpg?1638638762");
   background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/091/original/background3.jpg?1638638762");
+  }
 }
 
 .img-actual-weather {
