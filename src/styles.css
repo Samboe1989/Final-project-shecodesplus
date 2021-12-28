@@ -1,0 +1,214 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/091/original/background3.jpg?1638638762");
+  background-size: cover;
+  padding: 10px;
+  font-family: "Gochi Hand", cursive;
+}
+
+h1 {
+  text-align: center;
+  border: solid 3px #132743;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  padding: 20px;
+  position: relative;
+  top: 100px;
+  left: 70px;
+  background-color: white;
+  font-family: "Gochi Hand", cursive;
+  color: #132743;
+}
+
+h2 {
+  color: #132743;
+  border: solid 2px #132743;
+  width: 350px;
+  text-align: center;
+  padding-bottom: 5px;
+  position: relative;
+  bottom: 160px;
+  left: 110px;
+  background-color: white;
+  font-family: "Gochi Hand", cursive;
+}
+
+form {
+  text-align: center;
+  margin-top: 0px;
+  font-family: "Gochi Hand", cursive;
+  color: #132743;
+}
+
+.img-actual-weather {
+  border: solid 3px #132743;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  padding: 10px;
+  position: relative;
+  left: 100px;
+  bottom: 180px;
+  background-color: white;
+  padding: 0;
+}
+
+.actual-temp {
+  position: relative;
+  top: 20px;
+  right: 140px;
+}
+
+.actual-humwin {
+  color: #132743;
+  border: solid 2px #132743;
+  width: 350px;
+  text-align: center;
+  position: relative;
+  left: 110px;
+  bottom: 160px;
+  background-color: white;
+  font-family: "Gochi Hand", cursive;
+}
+
+.actual-humwin p {
+  margin-bottom: 1px;
+  background-color: white;
+  font-size: 20px;
+  font-family: "Gochi Hand", cursive;
+}
+
+.date {
+  color: #132743;
+  border: solid 2px #132743;
+  width: 350px;
+  text-align: center;
+  margin-top: 3px;
+  position: relative;
+  left: 110px;
+  bottom: 150px;
+  background-color: white;
+  font-size: 20px;
+  font-family: "Gochi Hand", cursive;
+}
+
+.celcius-fahrenheit {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  bottom: 50px;
+  font-size: 20px;
+  font-family: "Gochi Hand", cursive;
+}
+
+.big-circle {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border: solid 3px #132743;
+  border-radius: 50%;
+  height: 580px;
+  width: 580px;
+  background: linear-gradient(
+    76.5deg,
+    rgb(129, 252, 255) 0.4%,
+    rgb(255, 175, 207) 49.8%,
+    rgb(255, 208, 153) 98.6%
+  );
+}
+
+.first-image {
+  width: 150px;
+  border: solid 2px #132743;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.second-image {
+  width: 150px;
+  border: solid 2px #132743;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.third-image {
+  width: 150px;
+  border: solid 2px #132743;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.fourth-image {
+  width: 150px;
+  border: solid 2px #132743;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.fifth-image {
+  width: 150px;
+  border: solid 2px #132743;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.first-temp {
+  text-align: center;
+  padding: 5px;
+  color: #132743;
+  font-family: "Gochi Hand", cursive;
+  font-size: 20px;
+}
+
+.second-temp {
+  text-align: center;
+  padding: 5px;
+  color: #132743;
+  font-family: "Gochi Hand", cursive;
+  font-size: 20px;
+}
+
+.thirtd-temp {
+  text-align: center;
+  padding: 5px;
+  color: #132743;
+  font-family: "Gochi Hand", cursive;
+  font-size: 20px;
+}
+
+.fourth-temp {
+  text-align: center;
+  padding: 5px;
+  color: #132743;
+  font-family: "Gochi Hand", cursive;
+  font-size: 20px;
+}
+
+.fifth-temp {
+  text-align: center;
+  padding: 5px;
+  color: #132743;
+  font-family: "Gochi Hand", cursive;
+  font-size: 20px;
+}
+
+.footer {
+  padding: 20px 0px 0px 5px;
+}
