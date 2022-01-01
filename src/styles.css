@@ -232,10 +232,13 @@ form {
 }
 
 .sourceLink {
+  max-width: 600px;
   text-align: center;
   color: #b1f4cf;
   padding-top: 10px;
   font-size: 12px;
+  margin: 0 auto;
+  display: block;
 }
 
 .bottomlink {
