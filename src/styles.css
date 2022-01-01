@@ -45,7 +45,9 @@ form {
 }
 
 .wrapper {
-  border: solid 3px #132743;
+  max-width: 600px;
+  border: solid 2px #132743;
+  border-radius: 5px;
   width: 768px;
   text-align: center;
   display: block;
