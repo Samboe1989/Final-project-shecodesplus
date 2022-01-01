@@ -1,16 +1,17 @@
 //Date and time function
 
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let hours = date.getHours();
   let todayDate = date.getDate();
   if (hours < 10) {
     hours = `0${hours}`;
   }
+
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-
   let days = [
     "Sunday",
     "Monday",
@@ -20,6 +21,7 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
+
   let day = days[date.getDay()];
 
   let months = [
@@ -37,28 +39,32 @@ function formatDate(date) {
     "Dec",
   ];
   let month = months[date.getMonth()];
-
-  currentTimeDate.innerHTML = `${day}, ${todayDate} ${month} | ${hours}:${minutes}`;
   return `${day}, ${todayDate} ${month} | ${hours}:${minutes}`;
 }
 
-let currentTimeDate = document.querySelector(".dateTime");
-let currentTime = new Date();
-currentTimeDate.innerHTML = formatDate(currentTime);
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
 
 //Search function
 
 function showWeather(response) {
   let currentCity = document.querySelector("#currentCity");
-  currentCity.innerHTML = `${response.data.name}, ${response.data.sys.country}`;
   let currentTemperature = document.querySelector("#temp");
-  currentTemperature.innerHTML = `${Math.round(response.data.main.temp)} C°`;
   let humidity = document.querySelector("#humidity");
-  humidity.innerHTML = `Humidity:${response.data.main.humidity}%`;
   let windSpeed = document.querySelector("#windSpeed");
-  windSpeed.innerHTML = `Wind:${Math.round(response.data.wind.speed)}Km/h`;
   let description = document.querySelector("#description");
+  let currentTimeDate = document.querySelector(".dateTime");
+
+  currentCity.innerHTML = `${response.data.name}, ${response.data.sys.country}`;
+  currentTemperature.innerHTML = `${Math.round(response.data.main.temp)} C°`;
+  humidity.innerHTML = `Humidity:${response.data.main.humidity}%`;
+  windSpeed.innerHTML = `Wind:${Math.round(response.data.wind.speed)}Km/h`;
   description.innerHTML = response.data.weather[0].description;
+  currentTimeDate.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function searchCity(event) {
