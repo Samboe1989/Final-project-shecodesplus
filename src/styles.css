@@ -63,6 +63,12 @@ form {
   }
 }
 
+.outside-wrapper {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
 .img-actual-weather {
   border: solid 3px #132743;
   border-radius: 50%;
